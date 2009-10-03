@@ -28,7 +28,7 @@ class ControlPoint < NSViewController
     self.view.setFrameOrigin(drag_location)
 
     if event.modifierFlags & NSCommandKeyMask > 0
-      #@first_control_point = click_location
+      puts "location :#{view.frame.origin.x} x #{view.frame.origin.y}"
     end
 
     @view.superview.setNeedsDisplay true
